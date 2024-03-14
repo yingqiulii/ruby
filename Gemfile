@@ -3,9 +3,7 @@ source "https://rubygems.org"
 ruby "3.0.0"
 gem 'faker'
 gem 'kaminari'
-gem 'bootstrap', '~> 5.3.0'
-gem 'sassc-rails'
-gem 'dartsass-sprockets'
+
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3", ">= 7.1.3.2"
