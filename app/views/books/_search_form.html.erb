@@ -1,0 +1,5 @@
+<%= form_tag books_path, method: :get do %>
+  <%= select_tag :genre_id, options_for_select(Genre.all.map{ |g| [g.name, g.id] }, params[:genre_id]), include_blank: true %>
+  <%= submit_tag "Search" %>
+<% end %>
+

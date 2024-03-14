@@ -1,6 +1,6 @@
 
 <h1>book list</h1>
-<div>
+<div><%= render 'search_form' %>
 <%= form_with(url: search_books_path, method: "get") do |form| %>
   <%= form.text_field :query, placeholder: "Search..." %>
   <%= form.submit "Search" %>
