@@ -10,4 +10,9 @@ Rails.application.routes.draw do
 
   resources :books, only: [:show]
 
+  resources :authors
+
+  resources :publishers
+
+
 end

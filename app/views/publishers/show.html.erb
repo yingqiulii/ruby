@@ -1,0 +1,12 @@
+<h1><%= @publisher.name %></h1>
+<p><strong>Country:</strong> <%= @publisher.country %></p>
+
+<h2>Books Published by <%= @publisher.name %></h2>
+<ul>
+  <% @publisher.books.each do |book| %>
+    <li><%= link_to book.title, book_path(book) %></li>
+  <% end %>
+</ul>
+
+<%= link_to 'Back', :back %>
+
